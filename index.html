@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 131 - Dynamic Web Fundamentals - Bwire Simon Peter</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Bwire Simon Peter. Learning HTML, CSS, JavaScript, and responsive design." />
+  <meta name="author" content="Bwire Simon Peter" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet" />
+  <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-title">
+      <span id="course-title">WDD 131 - Dynamic Web Fundamentals - Bwire Simon Peter</span>
+    </div>
+
+    <nav class="header-nav">
+      <a href="https://www.linkedin.com/">LinkedIn</a>
+      <a href="https://byupw.instructure.com/">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <h1>Bwire Simon Peter</h1>
+    <div class="grid-layout">
+      <div class="left-column">
+        <section class="card about">
+          <h2>About Me</h2>
+          <div class="about-content">
+            <img src="images/profile.jpg" alt="Profile Picture of Bwire Simon Peter" />
+            <p>Bwire Simon Peter is a driven and thoughtful individual with a passion for growth,
+              leadership, and community impact. Known for his strong work ethic and clear communication,
+              he brings integrity and purpose to every project he undertakes...</p>
+          </div>
+        </section>
+
+        <section class="card location">
+          <h2>Jinja, Uganda</h2>
+          <div class="location-content">
+            <img src="images/flag.jpg" alt="The Uganda National Flag" />
+            <p>Jinja City, often called the Adventure Capital of East Africa, sits gracefully on the
+              northern shores of Lake Victoria in southeastern Uganda...</p>
+          </div>
+        </section>
+      </div>
+
+      <section class="card resources">
+        <h2>Web Dev Resources</h2>
+        <ul>
+          <li><a href="#">Dev.to Community</a></li>
+          <li><a href="#">Smashing Magazine</a></li>
+          <li><a href="#">CSS Tricks</a></li>
+          <li><a href="#">W3 Schools</a></li>
+          <li><a href="#">Image Placeholder</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Bwire Simon Peter, Uganda</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+/* Base Reset and Fonts */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Layout */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px 0;
+}
+
+.header-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.header-title h1 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+
+/* Spread nav links across full width */
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  /* Even spacing across the page */
+  max-width: 100%;
+  padding: 10px 0;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* Main Content */
+main {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+main h1 {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #003366;
+}
+
+main h2 {
+  background-color: #003366;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #f1f2f3;
+  margin-bottom: 20px;
+}
+
+/* Top Sections Layout */
+.top-sections {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.about {
+  flex: 1 1 60%;
+}
+
+.resources {
+  flex: 1 1 35%;
+  height: 95%;
+}
+
+
+/* Card Styling */
+.card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* Resources List */
+.resources ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resources li {
+  margin-bottom: 8px;
+}
+
+.resources a {
+  color: #003366;
+  text-decoration: none;
+}
+
+.resources a:hover {
+  text-decoration: underline;
+}
+
+/* Location Section */
+.location {
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-sections {
+    flex-direction: column;
+  }
+
+  .about,
+  .resources {
+    flex: 1 1 100%;
+  }
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row-reverse;
+  /* This flips the image to the right */
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.about-content img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-content p {
+  flex: 1;
+}
+
+.location-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.location-content img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.location-content p {
+  flex: 1;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* Responsive fallback */
+@media (max-width: 768px) {
+  .grid-layout {
+    display: block;
+  }
+
+  .resources {
+    margin-top: 20px;
+  }
+}
