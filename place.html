@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country page</title>
+    <meta name="description" content="An clear photographic view of Kenya that i once visited during the winter." />
+    <meta name="author" content="Bwire Simon Peter" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Discover Kenya</h1>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <div class="hero">
+            <picture>
+                <source srcset="images/hans-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hans-medium.webp" media="(min-width: 500px)">
+                <img src="images/hans-small.webp" alt="Scenic view of Kenya" width="1500" height="750">
+            </picture>
+        </div>
+
+        <!-- Info Grid: Data + Weather -->
+        <div class="info-grid">
+            <!-- Data Section -->
+            <section class="data-section">
+                <h2>Kenya Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 580,367 sq km</li>
+                    <li><strong>Population:</strong> ~54 million</li>
+                    <li><strong>Capital:</strong> Nairobi</li>
+                    <li><strong>Languages:</strong> Swahili, English</li>
+                    <li><strong>Currency:</strong> Kenyan Shilling</li>
+                    <li><strong>Time Zone:</strong> UTC+3</li>
+                    <li><strong>Calling Code:</strong> +254</li>
+                    <li><strong>Internet TLD:</strong> .ke</li>
+                </ul>
+            </section>
+
+            <!-- Weather Section -->
+            <section class="weather-section">
+                <h2 class="weather">Weather</h2>
+                <img src="images/weather.svg" alt="Weather icon" class="weather-icon-mobile">
+                <p><strong>Temperature:</strong> <span id="temp">8</span> °C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> <span id="wind">10</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="year"></span> Bwire Simon Peter</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

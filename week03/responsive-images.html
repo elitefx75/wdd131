@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <meta name="description" content="Responsive images Media Gallery." />
+    <meta name="author" content="Bwire Simon Peter" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="week03/styles/responsive-images.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <main>
+            <div class="hero">
+                <picture>
+                    <!-- Large image for wide screens -->
+                    <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                    <!-- Medium image for mid-size screens -->
+                    <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                    <!-- Fallback small image -->
+                    <img src="images/hero-small.webp" alt="Temple name and location" width="1500" height="750">
+                </picture>
+            </div>
+        </main>
+
+    </main>
+</body>
+
+</html>

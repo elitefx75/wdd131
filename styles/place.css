@@ -1,0 +1,108 @@
+/* ===========================
+   Global Variables
+   =========================== */
+:root {
+  --primary-color: #000000;   /* black */
+  --secondary-color: #ff0000; /* red */
+  --accent-color: #006400;    /* dark green */
+  --neutral-color: #ffffff;   /* white */
+  --font-family: 'Roboto', sans-serif;
+}
+
+/* ===========================
+   Reset & Base Styles
+   =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--neutral-color);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===========================
+   Header
+   =========================== */
+header {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ===========================
+   Hero Section
+   =========================== */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===========================
+   Info Grid (Mobile Stack)
+   =========================== */
+.info-grid {
+  display: block;
+  padding: 1rem;
+}
+
+/* ===========================
+   Data Section
+   =========================== */
+.data-section {
+  background-color: var(--accent-color);
+  color: var(--neutral-color);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.data-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.data-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.data-section li {
+  margin: 0.5rem 0;
+}
+
+/* ===========================
+   Weather Section
+   =========================== */
+.weather-section {
+  background-color: var(--secondary-color);
+  color: var(--neutral-color);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.weather-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.weather-icon-mobile {
+  width: 50px;
+  height: auto;
+  margin: 0.5rem 0;
+}
+
+/* ===========================
+   Footer
+   =========================== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  margin-top: 2rem;
+}
