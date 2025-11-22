@@ -1,0 +1,110 @@
+/* temples-large.css - larger desktop view */
+
+@media only screen and (min-width: 768px) {
+
+    /* Header: flex layout with title left and nav right */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #4a148c;
+        color: white;
+    }
+
+    header h1 {
+        text-align: left;
+        margin: 0;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: #ffeb3b;
+    }
+
+    /* Main content grid: 3 columns */
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* ✅ 3 images per row */
+        gap: 2rem;
+        padding: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    /* Section title spans full width above grid */
+    .section-title,
+    .gallery-title {
+        grid-column: 1 / -1;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: #4a148c;
+        font-weight: bold;
+    }
+
+    figure {
+        margin: 0;
+        text-align: center;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+
+    figure img:hover {
+        transform: scale(1.05);
+    }
+
+    figcaption {
+        margin-top: 0.5rem;
+        font-style: italic;
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #4a148c;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1rem;
+        margin-top: 3rem;
+    }
+
+    footer p {
+        margin: 0.5rem 0;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+}

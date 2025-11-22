@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+/* Header */
+header {
+    background-color: #4a148c;
+    /* deep purple */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation with Flex */
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    /* stacked on mobile */
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+    /* yellow hover effect */
+}
+
+/* Main content */
+main {
+    margin-top: 2rem;
+    max-width: 900px;
+    /* limit width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #4a148c;
+    font-weight: bold;
+}
+
+/* Gallery grid - single column on mobile */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+figure {
+    margin: 0 auto;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #4a148c;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    /* creates space before images */
+    color: #4a148c;
+    font-weight: bold;
+}
+
+#hamburger {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin: 0.5rem auto;
+}
+
+nav ul.show {
+    display: flex;
+}
