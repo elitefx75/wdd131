@@ -107,4 +107,19 @@
         flex-direction: row;
         gap: 2rem;
     }
+
+    .temple-card img {
+        width: 400px;
+        /* fixed width */
+        height: 225px;
+        /* fixed height */
+        object-fit: cover;
+        /* crops/zooms neatly without distortion */
+        border-radius: 6px;
+        /* optional: rounded corners */
+        display: block;
+        margin: 0 auto;
+        /* center the image */
+    }
+
 }

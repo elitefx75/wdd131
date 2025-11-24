@@ -77,7 +77,7 @@ const temples = [
     dedicated: "2022, June, 05",
     area: 18600,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/nairobi-kenya-temple/400x250/nairobi-kenya-temple-60488-main.jpg",
+      "https://churchofjesuschristtemples.org/assets/img/temples/nairobi-kenya-temple/nairobi-kenya-temple-60488-main.jpg",
   },
   {
     templeName: "Rome Italy Temple",
@@ -85,7 +85,7 @@ const temples = [
     dedicated: "2019, October, 10",
     area: 41000,
     imageUrl:
-      "https://churchofjesuschristtemples.org/rome-italy-temple/images/main.jpg",
+      "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg",
   },
   {
     templeName: "Tokyo Japan Temple",
@@ -93,7 +93,7 @@ const temples = [
     dedicated: "1980, August, 27",
     area: 52920,
     imageUrl:
-      "https://churchofjesuschristtemples.org/tokyo-japan-temple/images/main.jpg",
+      "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2056-main.jpg",
   }
 
 ];
