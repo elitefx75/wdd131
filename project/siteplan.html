@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan</title>
+  <style>
+    :root {
+      --primary-color: #0aae9b;   /* headings, accents */
+      --secondary-color: #264653; /* background, footer */
+      --text-color: #333;         /* body text */
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: #f9f9f9;
+    }
+
+    header, footer {
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: var(--primary-color);
+    }
+
+    main {
+      padding: 1rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    .wireframe {
+      border: 2px dashed var(--primary-color);
+      padding: 1rem;
+      text-align: center;
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ugandan Proverbs Hub</h1>
+    <p>A cultural learning and memorization site</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Site Name</h2>
+      <p><strong>Ugandan Proverbs Hub</strong> — This name reflects the site’s purpose of sharing and teaching Ugandan proverbs. It emphasizes culture, wisdom, and accessibility.</p>
+      <p><em>Optional domain availability:</em> ugandanproverbs.org</p>
+    </section>
+
+    <section>
+      <h2>Site Purpose</h2>
+      <p>The site provides a hub for Ugandan cultural wisdom by offering collections of proverbs, explanations of their meanings, and interactive tools for memorization. It also highlights the cultural context behind each proverb.</p>
+    </section>
+
+    <section>
+      <h2>Scenarios</h2>
+      <ul>
+        <li>“What is a proverb that teaches perseverance in Ugandan culture?”</li>
+        <li>“How can I practice memorizing proverbs for my cultural studies class?”</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Color Schema</h2>
+      <p><strong>Primary Color:</strong> Bright Teal #0aae9b — used for headings and accents.</p>
+      <p><strong>Secondary Color:</strong> Dark Blue (#264653) — used for header, footer, and navigation background.</p>
+      <p><strong>Text Color:</strong> Dark Gray (#333) — used for body text.</p>
+    </section>
+
+    <section>
+      <h2>Typography</h2>
+      <p><strong>Headings:</strong> Arial, sans-serif.</p>
+      <p><strong>Body Text:</strong> Georgia, serif.</p>
+      <p><strong>Accents:</strong> Courier New, monospace.</p>
+    </section>
+
+    <section>
+      <h2>Wireframe</h2>
+      <div class="wireframe">
+        <p><strong>Mobile View:</strong></p>
+        <img src="images/sitep-plan-mobile.jpeg" alt="Mobile Wireframe">
+        <p>[Header]<br>[Navigation]<br>[Featured Proverb]<br>[Content Sections stacked]<br>[Footer]</p>
+      </div>
+      <div class="wireframe" style="margin-top:1rem;">
+        <p><strong>Desktop View:</strong></p>
+        <img src="images/site-plan-desktop.jpeg" alt="Desktop Wireframe">
+        <p>[Header]<br>[Navigation horizontally]<br>[Featured Proverb]<br>[Content in two columns]<br>[Footer]</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Bwire Simon Peter, Uganda</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
