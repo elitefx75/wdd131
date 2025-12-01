@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ugandan Proverbs Hub</title>
+    <meta name="description" content="A dynamic, responsive hub for Ugandan proverbs—discover, learn, and contribute.">
+    <meta name="author" content="Bwire Simon Peter" />
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap"
+        rel="stylesheet" />
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container">
+            <nav class="nav">
+                <a class="brand" href="index.html">Proverbs Hub</a>
+                <button id="menu-toggle" aria-expanded="false" aria-controls="primary-nav"
+                    class="menu-toggle">Menu</button>
+                <ul id="primary-nav" class="nav-links" data-visible="false">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="themes.html">Themes</a></li>
+                    <li><a href="submit.html">Submit</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="container">
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Ugandan Proverbs Hub</h1>
+                <p>Explore cultural wisdom across themes like perseverance, community, and resilience. Learn, reflect,
+                    and add your voice.</p>
+                <a class="btn" href="themes.html">Browse Themes</a>
+            </div>
+            <picture>
+                <source srcset="assets/img/hero.webp" type="image/webp">
+                <img loading="lazy" src="assets/img/hero.jpg" alt="Illustration representing wisdom and culture">
+            </picture>
+        </section>
+
+        <section id="featured" class="card">
+            <h2>Proverb of the Day</h2>
+            <p id="proverb-text">Loading today’s proverb…</p>
+            <div class="actions">
+                <button id="new-proverb" class="btn-outline">Show another</button>
+                <button id="save-favorite" class="btn-outline">Save to favorites</button>
+            </div>
+            <p id="favorite-status" class="muted"></p>
+        </section>
+
+        <section class="grid two">
+            <article class="card">
+                <h3>Learn by theme</h3>
+                <p>Explore curated proverbs organized by themes. Each theme highlights a set of sayings and context.</p>
+                <a class="btn" href="themes.html">Explore Themes</a>
+            </article>
+            <article class="card">
+                <h3>Share your proverb</h3>
+                <p>Contribute a proverb from your region or language and help broaden the collection.</p>
+                <a class="btn" href="submit.html">Submit a Proverb</a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="currentyear"></span> Bwire Simon Peter, Uganda</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

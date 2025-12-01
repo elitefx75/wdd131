@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ugandan Proverbs Hub</title>
+    <meta name="description" content="A dynamic, responsive hub for Ugandan proverbs—discover, learn, and contribute.">
+    <meta name="author" content="Bwire Simon Peter" />
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap"
+        rel="stylesheet" />
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container">
+            <nav class="nav">
+                <a class="brand" href="index.html">Proverbs Hub</a>
+                <button id="menu-toggle" aria-expanded="false" aria-controls="primary-nav"
+                    class="menu-toggle">Menu</button>
+                <ul id="primary-nav" class="nav-links" data-visible="false">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="themes.html" aria-current="page">Themes</a></li>
+                    <li><a href="submit.html">Submit</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="container">
+        <header class="page-header">
+            <h1>Browse Themes</h1>
+            <p class="muted">Filter proverbs by theme and discover related wisdom.</p>
+        </header>
+
+        <section class="filters card">
+            <label for="theme-filter" class="label">Filter by theme</label>
+            <select id="theme-filter">
+                <option value="all">All</option>
+            </select>
+        </section>
+
+        <section id="themes" class="grid themes-grid">
+            <!-- Populated dynamically via JS -->
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="currentyear"></span> Bwire Simon Peter, Uganda</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
